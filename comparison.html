@@ -9,7 +9,7 @@
   	<link rel="stylesheet" href="bootstrap.min.css">
   	<link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="background">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <a class="navbar-brand" href="index.html">Equator Dashboard</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,23 +45,31 @@
   </div>
 </nav>
 
+<div class="container">
+  <div class="white-box">
+    
+<div id="background">
+
+<h4>Comparison: Latitude vs (Variable)</h4>
 <hr>
+<div>Click any plot to get an in-depth analysis:</div>
 
 <a href="cloudiness.html" alt="Cloudiness Graph" target="_blank"><img src="Images\lat_cloud_scatter_plot.png" alt="Cloudiness Graph"></a>
 <em>Cloudiness across latitiudes</em>
-<hr>
 
 <a href="humidity.html" alt="Humidity Graph" target="_blank"><img src="Images\lat_humid_scatter_plot.png" alt="Humidity Graph"></a>
 <em>Humidity across latitiudes</em>
-<hr>
 
-<img src="Images\lat_max_temp_scatter_plot.png" alt="Max Temp Graph">
+<a href="maxtemp.html" alt="Max Temp Graph" target="_blank"><img src="Images\lat_max_temp_scatter_plot.png" alt="Max Temp Graph"></a>
 <em>Max temperature across latitiudes</em>
-<hr>
 
-<img src="Images\lat_wind_speed_scatter_plot.png" alt="Wind Speed Graph">
+<a href="wind-speed.html" alt="Wind Speed Graph" target="_blank"><img src="Images\lat_wind_speed_scatter_plot.png" alt="Wind Speed Graph"></a>
 <em>WindSpeed across latitiudes</em>
-<hr>
+
+</div>
+  
+  </div>
+</div>
 
 </body>
 </html>
