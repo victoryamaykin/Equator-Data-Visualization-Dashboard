@@ -1,12 +1,48 @@
+* {
+	box-sizing: border-box;
+}
+
+.my_copyright{
+margin: 0; padding: 0;
+	font: 1em Georgia, serif;
+	float: center;
+}
+
 body {margin: 0; padding: 0;
 	font: 1em Georgia, serif;}
+
+.box {
+	float: center; 
+	width: 100%;
+	padding: 50px;
+	background-color: white; 
+}
+
+img {
+	float-left: auto;
+	float-right: auto;
+}
 
 #background {
 	  background-color: #95a5a6;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.center {
+	display: flex;
+	justify-content: center; 
+}
+
 h5 {
-	text-align: center; 
+	font: 1em Georgia, serif;
+	font-weight: bold;
+	text-align: left;
+	font-size: 18px; 
 }
 
 .container {position: absolute; margin: 0; width:100%; background: #f4f5f4; min-height: 600px; }
