@@ -8,10 +8,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   	<link rel="stylesheet" href="bootstrap.min.css">
   	<link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<a name="top"></a>
 </head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="index.html">Equator Dashboard</a>
+
+
+<body id="background">
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="index.html">Equator Data Visualization Dashboard</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -19,7 +28,7 @@
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.html">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="comparison.html">Comparison</a>
@@ -28,21 +37,19 @@
         <a class="nav-link" href="data.html">Data</a>
       </li>
   <li class="nav-item">
-<div class="btn-group">
-  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Plots
-  </button>
-  <div class="dropdown-menu dropdown-menu-right">
-    <a href="cloudiness.html" alt="Cloudiness Graph" target="_blank"><button class="dropdown-item" type="button">Cloudiness</button></a>
-    <a href="humidity.html" alt="Humidity Graph" target="_blank"><button class="dropdown-item" type="button">Humidity</button></a>
-    <a href="maxtemp.html" alt="Max Temperature Graph" target="_blank"><button class="dropdown-item" type="button">Max Temperature</button></a>
-    <a href="wind-speed.html" alt="Wind Speed in Miles Per Hour Graph" target="_blank"><button class="dropdown-item" type="button">Wind Speed</button></a>
-  </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://victoryamaykin.github.io/victory.github.io/">About</a>
-      </li>
-    </ul>
+
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+  <button type="button" class="btn btn-primary">Plots</button>
+  <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+      <a class="dropdown-item" href="humidity.html">Humidity</a>
+      <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+      <a class="dropdown-item" href="wind-speed.html">Wind Speed</a>
+    </div>
   </div>
+</div>
 </nav>
 
 <img src="Images\lat_humid_scatter_plot.png" alt="Humidity Graph">

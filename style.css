@@ -38,6 +38,11 @@ img {
 	justify-content: center; 
 }
 
+.left {
+	display: flex;
+	justify-content: left; 
+}
+
 h5 {
 	font: 1em Georgia, serif;
 	font-weight: bold;

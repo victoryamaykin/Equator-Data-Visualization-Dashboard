@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Equator Data Visualization Dashboard</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  	<link rel="stylesheet" href="bootstrap.min.css">
-  	<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 <a name="top"></a>
 </head>
 
 
-<body>
+<body id="background">
+
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="index.html">Equator Data Visuzalition Dashboard</a>
+  <a class="navbar-brand" href="index.html">Equator Data Visualization Dashboard</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -31,6 +38,7 @@
         <a class="nav-link" href="data.html">Data</a>
       </li>
   <li class="nav-item">
+
 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
   <button type="button" class="btn btn-primary">Plots</button>
   <div class="btn-group" role="group">
@@ -38,9 +46,8 @@
     <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
       <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
       <a class="dropdown-item" href="humidity.html">Humidity</a>
-            <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+      <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
       <a class="dropdown-item" href="wind-speed.html">Wind Speed</a>
-
     </div>
   </div>
 </div>
@@ -51,9 +58,9 @@
   <div class="row center">
      <div class="col-sm-12 col-md-12">
         <div class="box red">
-    <h1 id="center" class="title">Equator Climate Analysis Project</h1>
+    <h3 id="center">Equator Climate Analysis Project</h3>
         <figure>
-            <img src="Images\equatorsign.png" alt="Equator Sign" width="200" height="100" class="center">
+            <img src="Images\equatorsign.png" alt="Equator Sign" width="300" height="150" class="center">
             <figcaption><br>Fig.1 - Ecuador Equator Sign.</figcaption>
         </figure>
 <div>For this project, the task was to identify which environmental factors indicate that the climate near the equator is hotter.<br><br>
@@ -61,12 +68,12 @@ I used the following APIs to gather the data and plot the results:<br><br></div>
 <a href="https://openweathermap.org/api" alt="Openweathermap API" target="_blank">OpenWeatherMap API</a>
 and Citypy library:
 <a href="https://pypi.org/project/citipy/" alt="CitiPy library" target="_blank">CityPy Library</a>
-</div></div></div>
+</div>
  <div class="row center">
       <div class="col-sm-12 col-md-12">
         <div class="box red">
+                      <h3>Key Findings:</h3>
           <ul>
-            <h3>Key Findings:</h3>
             <li>As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth (23.4 Deg. perpendicular to the ecliptic).</li>
             <li>There is no strong relationship between latitude and cloudiness. However, it is interesting to see that a strong band of cities sits at 0, 80, and 100% cloudiness.</li>
             <li>There is no strong relationship between latitude and wind speed. However, in northern hemispheres there is a flurry of cities with over 60 mph of wind.</li>
@@ -75,9 +82,9 @@ and Citypy library:
            <div class="row center">
       <div class="col-sm-12 col-md-12">
         <div class="box red">
-<div class="my_copyright">Copyright © 2019 • Victor Yamaykin  • All Rights Reserved</div>
+<div class="my_copyright center">Copyright © 2019 • Victor Yamaykin  • All Rights Reserved</div>
 
-<h5><a href="#top">Back to Top</a></h5>
+<h5><a href="#top" class="center">Back to Top</a></h5>
 </div></div></div>
           </div>
       </div>
