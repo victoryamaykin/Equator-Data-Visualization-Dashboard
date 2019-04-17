@@ -16,82 +16,74 @@
 </head>
 
 
-<body id="background">
-
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="index.html">Equator Data Visualization Dashboard</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarColor01">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Home</a>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary navbar-responsive">
+        <a class="navbar-brand" href="index.html">Equator Data Visualization Dashboard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+      
+        <li class="nav-item">
+      <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+       
+          <div class="btn-group" role="group">
+              <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <a class="dropdown-item" href="cloudiness.html"><strong>Cloudiness</strong></a>
+                <a class="dropdown-item" href="humidity.html"><strong>Humidity</strong></a>
+                <a class="dropdown-item" href="maxtemp.html"><strong>Max Temperature</strong></a>
+                <a class="dropdown-item" href="wind-speed.html"><strong>Wind Speed</strong></a>
+              </div>
+            </div>
+      </div>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link active" href="comparison.html">Comparison</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="data.html">Data</a>
-      </li>
-  <li class="nav-item">
 
-<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-  <button type="button" class="btn btn-primary">Plots</button>
-  <div class="btn-group" role="group">
-    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-      <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-      <a class="dropdown-item" href="humidity.html">Humidity</a>
-      <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
-      <a class="dropdown-item" href="wind-speed.html">Wind Speed</a>
-    </div>
-  </div>
-</div>
-</nav>
+      </nav>
 
-    <div id="center" class="container box clearfix center">
-      <div class="row center">
-         <div class="col-sm-12 col-md-12">
-            <div class="box red">    
-<h4 class="left">Comparison: Latitude vs (Variable)</h4>
+    <div class="container">
+      <div class="row">
+         <div class="col">
+            <div class="box">    
+<h4>Comparison: Latitude vs. (Variable)</h4>
 <hr>
 <div>Click any plot to get an in-depth analysis:</div>
+            </div></div></div>
+
+
 <div class="row center">
 
-  <div class="col-12 col-sm-6 col-md-6">
+    <div class="center col-sm-12 col-md-6">
+        <a href="cloudiness.html" alt="Cloudiness Graph"><img src="Images\lat_cloud_scatter_plot.png" alt="Cloudiness Graph"></a>
+        </div>
 
-<a href="cloudiness.html" alt="Cloudiness Graph"><img src="Images\lat_cloud_scatter_plot.png" alt="Cloudiness Graph"></a>
-</div>
-
-<div class="col-12 col-sm-6 col-md-6">
-
+<div class="center col-sm-12 col-md-6">
 <a href="humidity.html" alt="Humidity Graph"><img src="Images\lat_humid_scatter_plot.png" alt="Humidity Graph"></a>
-
 </div>
 
 <div class="row center">
-
-
-    <div class="col-12 col-sm-6 col-md-6">
-
+    <div class="center col-sm-12 col-md-6">
 <a href="maxtemp.html" alt="Max Temp Graph"><img src="Images\lat_max_temp_scatter_plot.png" alt="Max Temp Graph"></a>
-
 </div>
-<div class="col-12 col-sm-6 col-md-6">
-
+<div class="center col-sm-12 col-md-6">
 <a href="wind-speed.html" alt="Wind Speed Graph"><img src="Images\lat_wind_speed_scatter_plot.png" alt="Wind Speed Graph"></a>
-
+</div>
 </div>
 
-</div>
-  
-  </div>
-</div>
+
 <div class="row center">
-    <div class="col-sm-12 col-md-12">
+    <div class="col">
       <div class="box red">
 <div class="my_copyright center">Copyright © 2019 • Victor Yamaykin  • All Rights Reserved</div>
 
@@ -99,7 +91,6 @@
 </div></div></div>
         </div>
     </div>
-</div>
 </div>
 </body>
 </html>
