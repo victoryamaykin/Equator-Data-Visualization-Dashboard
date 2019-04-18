@@ -171,6 +171,7 @@ a {
     color: #18BC9C;
     text-decoration: none;
     background-color: transparent;
+    font-weight: bold;
 }
 a:hover {
     color: #0f7864;

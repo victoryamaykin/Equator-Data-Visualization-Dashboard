@@ -44,8 +44,8 @@ body {margin: 0; padding: 0;
 .img {
 	float: center;
 	height: 100%;
-width: 100%;
-object-fit: contain;
+	width: 100%;
+	object-fit: contain;
 }
 
 footer {
@@ -87,8 +87,6 @@ footer {
 	display: flex;
 	justify-content: left; 
 }
-
-
 
 h5 {
 	font: 1em Georgia, serif;

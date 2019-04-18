@@ -20,7 +20,7 @@
 
 <body id="background">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary navbar-responsive">
-        <a class="navbar-brand" href="index.html">Equator Data Visualization Dashboard</a>
+        <nav class="navbar-brand"><strong>Equator Data Visualization Dashboard</strong></nav>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,7 +41,7 @@
       <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
        
           <div class="btn-group" role="group">
-              <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</button>
+              <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Plots</strong></button>
               <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                 <a class="dropdown-item" href="cloudiness.html"><strong>Cloudiness</strong></a>
                 <a class="dropdown-item" href="humidity.html"><strong>Humidity</strong></a>
@@ -55,7 +55,7 @@
       </nav>
 
 
-<div class="container" style="background-color:white; text-align:left; vertical-align: middle; padding:20px 47px;">
+<div class="container white-box">
 
     <div class="row justify-content-md-center">
         <div class="col-sm-12 col-md-4">
@@ -71,14 +71,15 @@
             <hr>
         </figure>
           <div>For this project, the task was to identify how weather changes as you get closer to the equator.<br><br>
-To complete this analysis, we pulled data from the <a href="https://openweathermap.org/api" alt="Openweathermap API" target="_blank">OpenWeatherMap API</a> to gather a dataset on over 600 cities.<br></div>
-<br><br>To get a random sample of cities, we used the <a href="https://pypi.org/project/citipy/" alt="CitiPy library" target="_blank">CityPy Library</a>.
+To complete this analysis, we pulled climate data from the <a href="https://openweathermap.org/api" alt="Openweathermap API" target="_blank">OpenWeatherMap API</a> to gather a dataset on over 600 cities.<br></div>
+<br>To get a random sample of cities, we used the <a href="https://pypi.org/project/citipy/" alt="CitiPy library" target="_blank">CityPy Library</a>.<br>
+<br>
+For the data visualizations, we used <a href="https://matplotlib.org/" target="_blank">Maplotlib</a> to show the relationship between various aspects of the weather and the latitude. <br><br>This site contains a searchable and filterable data table and explanations of the trends and correlations discovered.
 <br><br>
-For the data visualizations, we used Maplotlib to show the relationship between various aspects of the weather and the latitude. This site has the dataset available to download as well as explanations of the trends and correlations discovered.
-<br><br>
-For questions and comments, please email me at victor.yamaykin@gmail.com 
-<br><br>
-
+Please see <a href="https://github.com/victoryamaykin" alt="Github page for Victor Yamaykin" target="_blank">my Github page</a> 
+for the jupyter notebook. <br><br> Special thanks to <a href="https://derekeder.com/csv_to_html_table/" alt="Derek Eder contact page" target="_blank">Derek Eder</a> 
+for his CSV to HTML table made with <a href="https://getbootstrap.com/">Bootstrap</a> and <a href="https://jquery.com/" target="_blank">jQuery</a>.<br><br>
+I built this site using the theme available from <a href="https://bootswatch.com/flatly/" target="_blank">Bootswatch.</a>
 </div>
 
   <div class="col-sm-12 col-md-6">
@@ -105,7 +106,6 @@ For questions and comments, please email me at victor.yamaykin@gmail.com
 </div>
 </div>
 
-<hr>
 <footer>
         <div class="my_copyright">Copyright © 2019 • Victor Yamaykin  • All Rights Reserved</div>
         <h5><a href="#top" class="center">Back to Top</a></h5>
