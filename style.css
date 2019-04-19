@@ -75,12 +75,16 @@ footer {
 
 #center {
 	text-align: center;
+	position: relative; left: 50%;
+	transform: translateX(-50%)
 }
 
 @media (max-width: 480px) {
 .center {
 	display: flex;
 	justify-content: center; 
+	position: relative; left: 50%;
+	transform: translateX(-50%)
 }}
 
 .left {

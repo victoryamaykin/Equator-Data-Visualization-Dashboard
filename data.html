@@ -65,7 +65,8 @@
 
 <p id="center" style="font-weight: bold;"><br>
     This table represents the random sample of cities used for plotting during this project.<br><br>
-    Use the arrows on each category to sort and the search bar to peruse the data. 
+    Use the arrows on each category to sort and the search bar to peruse the data.<br><br>
+    Nota bene: the date/time from the API request is in Unix format. <br>The formula is =(A1/86400)+25569 where A1 contains the UNIX time, <br>which should convert to Excel date/time. Make sure you format the cell as the required date/time format.
 </p>        
     <hr>
 
@@ -80,7 +81,7 @@
         <th title="Field #7">Humidity</th>
         <th title="Field #8">Lat</th>
         <th title="Field #9">Lng</th>
-        <th title="Field #10">Max Temp (F)</th>
+        <th title="Field #10">Max Temp (K)</th>
         <th title="Field #11">Wind Speed</th>
         </tr></thead>
         <tbody><tr>
