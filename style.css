@@ -48,10 +48,18 @@ body {margin: 0; padding: 0;
 	object-fit: contain;
 }
 
+.comparison-image:hover {
+	opacity: 0.6;
+  }
+
+  
+
 footer {
 	position: relative;
-	height: 300px;
+  	bottom: 0;
+  	text-align: center;
 	width: 100%;
+  margin-top: 30px;
 	background-color: #2C3E50;
 	text-decoration-color: white; 
 }
@@ -119,4 +127,10 @@ text-align: center;
 -ms-transform: rotate(-90deg);
 -o-transform: rotate(-90deg);
 transform: rotate(-90deg);
+}
+
+.img:hover {
+	border-style: solid;
+	border-width: medium;
+	border-color: rgb(6, 209, 131);
 }
