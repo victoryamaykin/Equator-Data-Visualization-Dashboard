@@ -1,2 +1,3 @@
 # Equator-Data-Visualization-Dashboard
-Full HTML and CSS dashboard showcasing Python, APIs, and Matplotlib 
+HTML and CSS dashboard showcasing Python, API, and Matplotlib skills
+* See the live page: https://victoryamaykin.github.io/Equator-Data-Visualization-Dashboard/
